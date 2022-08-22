@@ -37,9 +37,10 @@
                             <div class="card bg-black border-0" style="width: 18rem;">
                                 <img src="images/ronaldo.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title fw-bold text-white">Cristiano Ronaldo</h5>
+                                    <h5 id="Ronaldo" class="card-title fw-bold text-white">Cristiano Ronaldo</h5>
                                     <p class="card-text text-white-50">22 Goals & 15 Assists</p>
-                                    <button type="button" class="btn btn-primary px-5">SELECT</button>
+                                    <button type="button" class="btn btn-primary px-5 btn-disable"
+                                        onclick="selectButton('Ronaldo')">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -48,9 +49,10 @@
                             <div class="card bg-black border-0" style="width: 18rem;">
                                 <img src="images/bruno.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title fw-bold text-white">Bruno Fernandes</h5>
+                                    <h5 id="Bruno" class="card-title fw-bold text-white">Bruno Fernandes</h5>
                                     <p class="card-text text-white-50">12 Goals & 18 Assists</p>
-                                    <button type="button" class="btn btn-primary px-5">SELECT</button>
+                                    <button type="button" class="btn btn-primary px-5"
+                                        onclick="selectButton('Bruno')">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -59,9 +61,10 @@
                             <div class="card bg-black border-0" style="width: 18rem;">
                                 <img src="images/sancho.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center ">
-                                    <h5 class="card-title fw-bold text-white">Jadon Sancho</h5>
+                                    <h5 id="Sancho" class="card-title fw-bold text-white">Jadon Sancho</h5>
                                     <p class="card-text text-white-50">9 Goals & 8 Assists</p>
-                                    <button type="button" class="btn btn-primary px-5">SELECT</button>
+                                    <button type="button" class="btn btn-primary px-5"
+                                        onclick="selectButton('Sancho')">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -70,9 +73,10 @@
                             <div class="card bg-black border-0" style="width: 18rem;">
                                 <img src="images/varane.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title fw-bold text-white">Raphael Varane</h5>
+                                    <h5 id="Varane" class="card-title fw-bold text-white">Raphael Varane</h5>
                                     <p class="card-text text-white-50">5 Goals & 8 Assists</p>
-                                    <button type="button" class="btn btn-primary px-5">SELECT</button>
+                                    <button type="button" class="btn btn-primary px-5"
+                                        onclick="selectButton('Varane')">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -81,9 +85,10 @@
                             <div class="card bg-black border-0" style="width: 18rem;">
                                 <img src="images/rashford.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title fw-bold text-white">Marcus Rashford</h5>
+                                    <h5 id="Rashford" class="card-title fw-bold text-white">Marcus Rashford</h5>
                                     <p class="card-text text-white-50">15 Goals & 7 Assists</p>
-                                    <button type="button" class="btn btn-primary px-5">SELECT</button>
+                                    <button type="button" class="btn btn-primary px-5"
+                                        onclick="selectButton('Rashford')">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -92,9 +97,10 @@
                             <div class="card bg-black border-0" style="width: 18rem;">
                                 <img src="images/vdb.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title fw-bold text-white">Van De Beek</h5>
+                                    <h5 id="Beek" class="card-title fw-bold text-white">Van De Beek</h5>
                                     <p class="card-text text-white-50">10 Goals & 11 Assists</p>
-                                    <button type="button" class="btn btn-primary px-5">SELECT</button>
+                                    <button type="button" class="btn btn-primary px-5"
+                                        onclick="selectButton('Beek')">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -103,9 +109,10 @@
                             <div class="card bg-black border-0" style="width: 18rem;">
                                 <img src="images/aaron.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title fw-bold text-white">Aaron Wan Bissaka</h5>
+                                    <h5 id="Bissaka" class="card-title fw-bold text-white">Aaron Wan Bissaka</h5>
                                     <p class="card-text text-white-50">4 Goals & 8 Assists</p>
-                                    <button type="button" class="btn btn-primary px-5">SELECT</button>
+                                    <button type="button" class="btn btn-primary px-5"
+                                        onclick="selectButton('Bissaka')">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -126,12 +133,8 @@
                                     <img class="w-75" src="/images/marker.png" alt="">
                                 </div>
 
-                                <ol class="ps-5">
-                                    <li class="p-3"></li>
-                                    <li class="p-3"></li>
-                                    <li class="p-3"></li>
-                                    <li class="p-3"></li>
-                                    <li class="p-3"></li>
+                                <ol id="list-container" class="ps-5">
+
 
                                 </ol>
                             </div>
@@ -196,7 +199,7 @@
         <hr class="hr-color py-3">
         <p class="text-white text-center">Copyright @ 2022 All Rights Reserved</p>
     </footer>
-
+    <script src="js/app.js"></script>
 </body>
 
 </html>
