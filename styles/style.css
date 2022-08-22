@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Manrope', sans-serif;
+    background-color: rgb(84, 84, 80);
 }
 
 .header-section {
@@ -15,4 +16,16 @@ body {
 
 .header-title {
     font-family: 'Berkshire Swash', cursive;
+}
+
+.player-container {
+    width: 60%;
+}
+
+.calc-container {
+    width: 20%;
+}
+
+.hr-color {
+    color: white;
 }
