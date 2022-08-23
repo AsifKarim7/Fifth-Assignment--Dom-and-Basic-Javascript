@@ -1,3 +1,5 @@
+// select players & disable button
+
 let list = [];
 function selectButton(name, button) {
 
@@ -20,6 +22,9 @@ function selectButton(name, button) {
         alert("You can't add more than five players");
     }
 }
+
+
+//Budget Calculator 
 
 document.getElementById('calculate').addEventListener('click', function () {
 
