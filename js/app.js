@@ -1,5 +1,5 @@
 let list = [];
-function selectButton(name) {
+function selectButton(name, button) {
 
     const playerName = document.getElementById(name).innerText;
 
@@ -10,6 +10,11 @@ function selectButton(name) {
         const li = document.createElement('li');
         li.innerText = playerName;
         listContainer.appendChild(li);
+        li.style.padding = '20px 0px 0px 20px';
+
+        const playerButton = document.getElementById(button);
+        playerButton.disabled = true;
+
     }
     else {
         alert("You can't add more than five players");
